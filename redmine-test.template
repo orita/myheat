@@ -95,18 +95,8 @@
         "AWS::CloudFormation::Init" : {
           "config" : {
             "packages" : {
-              "yum" : {
-                "mysql"        : [],
-                "mysql-server" : [],
-                "httpd"        : [],
-                "wordpress"    : []
-              }
             },
             "services" : {
-              "systemd" : {
-                "mysqld"   : { "enabled" : "true", "ensureRunning" : "true" },
-                "httpd"    : { "enabled" : "true", "ensureRunning" : "true" }
-              }
             }
           }
         }
